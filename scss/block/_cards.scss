@@ -1,0 +1,104 @@
+// <div class="cards--box">
+// <div class="cards--box-card">
+//   <img src="./img/title.svg" alt="" />
+//   <h2>Lorem ipsum dolor</h2>
+//   <p>
+//     Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+//     ultricies non ligula. Suspendisse imperdiet
+//   </p>
+// </div>
+
+.cards--box {
+  width: 100%;
+  .cards--box-card {
+    text-align: center;
+    img{
+      max-width: 130px;
+      height: auto;
+    }
+    h2 {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 218%;
+      text-align: center;
+      color: #828282;
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 200%;
+      text-align: center;
+      color: #828282;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .cards--box {
+    width: 100%;
+    padding: 20px 32px;
+    .cards--box-card {
+      margin-top: 56px;
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 775px) {
+  .cards--box {
+    width: 100%;
+    padding: 20px 32px;
+    .cards--box-card {
+      margin-top: 56px;
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: 775px) and (max-width: 1000px) {
+  .cards--box {
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 30px;
+    .cards--box-card {
+        width: 340px;
+        margin-top: 56px;
+      h2 {
+        margin-top: 16px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1001px) {
+    .cards--box {
+      width: 100%;
+      padding: 20px 165px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      .cards--box-card {
+          max-width: 340px;
+          margin-top: 56px;
+       
+        h2 {
+          margin-top: 16px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+  
